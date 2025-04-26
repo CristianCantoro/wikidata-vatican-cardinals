@@ -2,8 +2,9 @@
 vatican_cardinals*.csv
 wikidata_cardinals*.csv
 
-# ignore data directory
+# ignore data and output directory
 data/
+output/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
