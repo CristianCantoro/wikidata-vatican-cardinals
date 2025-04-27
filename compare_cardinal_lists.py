@@ -141,11 +141,23 @@ def find_missing_cardinals(wikidata_path, vatican_path, output_dir):
                                            rsuffix='_wd'
                                            )
 
-    different_birth = cardinals_join[cardinals_join['birthdate_va'] != cardinals_join['birthdate_wd']]
-    different_start = cardinals_join[cardinals_join['cardinal_start_va'] != cardinals_join['cardinal_start_wd']]
+    different_birth = cardinals_join[
+        cardinals_join['birthdate_va'] != cardinals_join['birthdate_wd']
+        ]
+    different_start = cardinals_join[
+        cardinals_join['cardinal_start_va'] != cardinals_join['cardinal_start_wd']
+        ]
 
-    write_results_csv(different_birth, 'different_birthdate_'+wikidata_path.name, output_dir, index=True)
-    write_results_csv(different_start, 'different_cardinal_start_'+wikidata_path.name, output_dir, index=True)
+    write_results_csv(different_birth,
+                      'different_birthdate_'+wikidata_path.name,
+                      output_dir,
+                      index=True
+                      )
+    write_results_csv(different_start,
+                      'different_cardinal_start_'+wikidata_path.name,
+                      output_dir,
+                      index=True
+                      )
 
     return
 
@@ -155,17 +167,17 @@ def cli():
     parser.add_argument("wikidata",
                         metavar="<wikidata>",
                         type=pathlib.Path,
-                        help="Wikidata data"
+                        help="Wikidata data."
                         )
     parser.add_argument("vatican",
                         metavar="<vatican>",
                         type=pathlib.Path,
-                        help="Vatican data"
+                        help="Vatican data."
                         )
     parser.add_argument("--output-dir",
                         type=pathlib.Path,
                         default=DEFAULT_OUTPUT_DIR,
-                        help="Output directory"
+                        help=f"Output directory [default: {DEFAULT_OUTPUT_DIR}]."
                         )
 
     args = parser.parse_args()
