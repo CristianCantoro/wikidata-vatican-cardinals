@@ -6,7 +6,7 @@ This project contains:
   * A list of Cardinals obtained by scraping the [College of Cardinals Dashboard](https://press.vatican.va/content/salastampa/en/documentation/cardinali---statistiche/dashboard-collegio-cardinalizio.html) (page 2): `vatican_cardinals.csv`
   * A script to compare the two lists: `compare_cardinal_lists.py`
 
-Both lists contain 252 names and most differences have been solved (see [Differences][#Differences] below).
+Both lists contain 252 names and most differences have been solved (see [Differences][https://github.com/CristianCantoro/wikidata-vatican-cardinals?tab=readme-ov-file#differences] below).
 
 ## Script Usage
 
@@ -100,4 +100,4 @@ As of today (2025-04-27), the differences between the two lists are the followin
 
 ## License
 
-The script is (c) 2025 Cristian Consonni and released under the MIT license, see `LICENSE.md` for details. The data is released under [CC0 1.0 Universal - Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+The script is (c) 2025 Cristian Consonni and released under the MIT license, see [`LICENSE.md`](https://github.com/CristianCantoro/wikidata-vatican-cardinals/blob/main/LICENSE.md) for details. The data is released under [CC0 1.0 Universal - Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
