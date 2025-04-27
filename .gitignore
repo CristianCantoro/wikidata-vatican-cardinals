@@ -1,7 +1,3 @@
-# ignore input files
-vatican_cardinals*.csv
-wikidata_cardinals*.csv
-
 # ignore data and output directory
 data/
 output/
