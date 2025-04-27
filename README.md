@@ -92,11 +92,11 @@ ORDER BY (?birthDate)
 ## Differences
 
 As of today (2025-04-27), the differences between the two lists are the following:
-  * The date format in the [College of Cardinals Dashboard](https://press.vatican.va/content/salastampa/en/documentation/cardinali---statistiche/dashboard-collegio-cardinalizio.html) is inconsistent, sometimes `DD/MM/YYYY` is used, other times `MM/DD/YYYY` is used. In `vatical_cardinals.csv` we use `YYYY-MM-DD`. For example, for Cardinal Jean-Paul Vesco, the birth date is 10 March 1962 (format `DD/MM/YYYY`), but the proclamation date is 7 December 2024 (format `MM/DD/YYYY`).
+  * The date format in the [College of Cardinals Dashboard](https://press.vatican.va/content/salastampa/en/documentation/cardinali---statistiche/dashboard-collegio-cardinalizio.html) is inconsistent, sometimes `DD/MM/YYYY` is used, other times `MM/DD/YYYY` is used. In `vatican_cardinals.csv` we use `YYYY-MM-DD`. For example, Cardinal Jean-Paul Vesco's birth date is 10 March 1962 (displaied as `DD/MM/YYYY`), but the proclamation date is 7 December 2024 (displaied as `MM/DD/YYYY`).
   ![Row for Cardinal Jean-Paul Vesco](https://i.imgur.com/AeRXjb6.png)
 
 
-  * The date of birth of Cardinal Toribio Ticona Porco ([Q2444070](https://www.wikidata.org/wiki/Q2444070)) is unclear some sources report `1937-04-25` [[1]](https://press.vatican.va/content/salastampa/en/documentation/cardinali_biografie/cardinali_bio_porcoticona_t.html) (used in Wikidata), while other sources report `1937-05-23` [[2](https://www.catholic-hierarchy.org/bishop/btipo.html), [3](https://cardinals.fiu.edu/bios2018.htm#Ticona)] (used in the Vatical list).
+  * The date of birth of Cardinal Toribio Ticona Porco ([Q2444070](https://www.wikidata.org/wiki/Q2444070)) is unclear some sources report `1937-04-25` [[1]](https://press.vatican.va/content/salastampa/en/documentation/cardinali_biografie/cardinali_bio_porcoticona_t.html) (used in Wikidata), while other sources report `1937-05-23` [[2](https://www.catholic-hierarchy.org/bishop/btipo.html), [3](https://cardinals.fiu.edu/bios2018.htm#Ticona)] (used in the Vatican list).
 
 ## License
 
