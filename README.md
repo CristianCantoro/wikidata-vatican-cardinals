@@ -142,7 +142,7 @@ The [output](vatican_cardinals_from_html.jsonl) is in jsonlines (`.jsonl`) forma
 ...
 ```
 
-or in CSV (`.csv`) format:
+or in CSV (`.csv`) format, with the `--csv`:
 ```
 nome,url,data_di_nascita,tipo,creato_da,paese,continente
 ACERBI Card. Angelo,https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_acerbi_a.html,1925-09-23,Non Elettore,Francesco,Italia,Europa
