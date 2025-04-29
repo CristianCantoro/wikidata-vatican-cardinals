@@ -6,7 +6,7 @@ This project contains:
   * A list of Cardinals obtained by scraping the [College of Cardinals Dashboard](https://press.vatican.va/content/salastampa/en/documentation/cardinali---statistiche/dashboard-collegio-cardinalizio.html) (page 2): `vatican_cardinals.csv`
   * A script to compare the two lists: `compare_cardinal_lists.py`
 
-Both lists contain 252 names and most differences have been solved (see [Differences][https://github.com/CristianCantoro/wikidata-vatican-cardinals?tab=readme-ov-file#differences] below).
+Both lists contain 252 names and most differences have been solved (see [Differences](#differences) below).
 
 ## Script Usage
 
@@ -98,12 +98,6 @@ As of today (2025-04-27), the differences between the two lists are the followin
 
   * The date of birth of Cardinal Toribio Ticona Porco ([Q2444070](https://www.wikidata.org/wiki/Q2444070)) is unclear some sources report `1937-04-25` [[1]](https://press.vatican.va/content/salastampa/en/documentation/cardinali_biografie/cardinali_bio_porcoticona_t.html) (used in Wikidata), while other sources report `1937-05-23` [[2](https://www.catholic-hierarchy.org/bishop/btipo.html), [3](https://cardinals.fiu.edu/bios2018.htm#Ticona)] (used in the Vatican list).
 
-## License
-
-The script is (c) 2025 Cristian Consonni and released under the MIT license, see [`LICENSE.md`](https://github.com/CristianCantoro/wikidata-vatican-cardinals/blob/main/LICENSE.md) for details. The data is released under [CC0 1.0 Universal - Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
-
----
-
 ## Scraping from HTML source
 
 The data is also available in an HTML table format at [Vatican Press Office](https://press.vatican.va/content/salastampa/it/documentation/cardinali---statistiche/elenco_per_eta.html). The script `vatican_cardinals_from_html.sh` extracts this data using web scraping techniques.
@@ -155,3 +149,11 @@ ACERBI Card. Angelo,https://press.vatican.va/content/salastampa/it/documentation
 KARLIC Card. Estanislao Esteban,https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_karlic_ee.html,1926-02-07,Non Elettore,Benedetto XVI,Argentina,America del Sud
 WAMALA Card. Emmanuel,https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_wamala_e.html,1926-12-15,Non Elettore,S. Giovanni Paolo II,Uganda,Africas
 ```
+
+## License
+
+Authors:
+  - [Cristian Consonni](https://github.com/CristianCantoro/)
+  - [Andrea Borruso](https://github.com/aborruso/)
+
+The code is released under the MIT license, see [`LICENSE.md`](https://github.com/CristianCantoro/wikidata-vatican-cardinals/blob/main/LICENSE.md) for details. The data is released under [CC0 1.0 Universal - Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
