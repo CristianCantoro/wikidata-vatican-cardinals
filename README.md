@@ -96,7 +96,7 @@ As of today (2025-04-27), the differences between the two lists are the followin
   ![Row for Cardinal Jean-Paul Vesco](https://i.imgur.com/AeRXjb6.png)
 
 
-  * The date of birth of Cardinal Toribio Ticona Porco ([Q2444070](https://www.wikidata.org/wiki/Q2444070)) is unclear some sources report `1937-04-25` [[1]](https://press.vatican.va/content/salastampa/en/documentation/cardinali_biografie/cardinali_bio_porcoticona_t.html) (used in Wikidata), while other sources report `1937-05-23` [[2](https://www.catholic-hierarchy.org/bishop/btipo.html), [3](https://cardinals.fiu.edu/bios2018.htm#Ticona)] (used in the Vatican list).
+  * The date of birth of Cardinal Toribio Ticona Porco ([Q2444070](https://www.wikidata.org/wiki/Q2444070)) is unclear some sources report `1937-04-25` [[1](https://press.vatican.va/content/salastampa/en/documentation/cardinali_biografie/cardinali_bio_porcoticona_t.html)] (used in Wikidata), while other sources report `1937-05-23` [[2](https://www.catholic-hierarchy.org/bishop/btipo.html), [3](https://cardinals.fiu.edu/bios2018.htm#Ticona)] (used in the Vatican list).
 
 ## Scraping from HTML source
 
