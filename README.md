@@ -40,7 +40,7 @@ It deduplicate results for people that have held multiple cardinal roles. It dis
 
 ```sparql
 SELECT DISTINCT ?cardinal ?cardinalLabel ?cardinalTypeSampleLabel ?birthDate ?birthPlaceLabel (?earliestCardinalStartTime AS ?cardinalStartTime) ?bishopStartTime ?priestStartTime WHERE {
-  
+
   # Subquery: Precompute earliest cardinalStartTime per cardinal
   {
     SELECT ?cardinal (MIN(?cardinalStartTime) AS ?earliestCardinalStartTime) (SAMPLE(?cardinalType) AS ?cardinalTypeSample) WHERE {
@@ -101,3 +101,32 @@ As of today (2025-04-27), the differences between the two lists are the followin
 ## License
 
 The script is (c) 2025 Cristian Consonni and released under the MIT license, see [`LICENSE.md`](https://github.com/CristianCantoro/wikidata-vatican-cardinals/blob/main/LICENSE.md) for details. The data is released under [CC0 1.0 Universal - Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+
+---
+
+## Scraping from HTML source
+
+The data is also available in an HTML table format at [Vatican Press Office](https://press.vatican.va/content/salastampa/it/documentation/cardinali---statistiche/elenco_per_eta.html). The script `vatican_cardinals_from_html.sh` extracts this data using web scraping techniques.
+
+The script:
+
+- Uses `scrape-cli` to extract the HTML table data
+- Processes the table rows using `xq` (from yq) to transform them into JSONL format
+- For each cardinal, extracts:
+  - name
+  - URL of their biographical page
+  - birth date (converting it to ISO format YYYY-MM-DD)
+  - type of cardinal
+  - who created them as cardinal
+  - country
+  - continent
+- Saves the output in `vatican_cardinals_from_html.jsonl`
+
+The [output](vatican_cardinals_from_html.jsonl) is in jsonlines format:
+
+```
+{"nome":"ACERBI Card. Angelo","url":"https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_acerbi_a.html","data_di_nascita":"1925-09-23","tipo":"Non Elettore","creato_da":"Francesco","paese":"Italia","continente":"Europa"}
+{"nome":"KARLIC Card. Estanislao Esteban","url":"https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_karlic_ee.html","data_di_nascita":"1926-02-07","tipo":"Non Elettore","creato_da":"Benedetto XVI","paese":"Argentina","continente":"America del Sud"}
+{"nome":"WAMALA Card. Emmanuel","url":"https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_wamala_e.html","data_di_nascita":"1926-12-15","tipo":"Non Elettore","creato_da":"S. Giovanni Paolo II","paese":"Uganda","continente":"Africa"}
+...
+```
