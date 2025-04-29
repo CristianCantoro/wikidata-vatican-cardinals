@@ -122,11 +122,36 @@ The script:
   - continent
 - Saves the output in `vatican_cardinals_from_html.jsonl`
 
-The [output](vatican_cardinals_from_html.jsonl) is in jsonlines format:
+### Usage
+
+```bash
+Usage:
+  vatican_cardinals_from_html.sh [-o OUTPUT_FILE] [--csv]
+  vatican_cardinals_from_html.sh (-h | --help)
+
+Extract the list of Cardinals in JSONL or CSV format from:
+https://press.vatican.va/content/salastampa/it/documentation/cardinali---statistiche/elenco_per_eta.html
+
+Options:
+  -o OUTPUT_FILE,               Output file name [default: vatican_cardinals_from_html.<ext>]
+  --output-file OUTPUT_FILE
+  --csv                         Convert the results into CSV.
+  -h, --help                    Show this help and exits.
+```
+
+The [output](vatican_cardinals_from_html.jsonl) is in jsonlines (`.jsonl`) format:
 
 ```
 {"nome":"ACERBI Card. Angelo","url":"https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_acerbi_a.html","data_di_nascita":"1925-09-23","tipo":"Non Elettore","creato_da":"Francesco","paese":"Italia","continente":"Europa"}
 {"nome":"KARLIC Card. Estanislao Esteban","url":"https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_karlic_ee.html","data_di_nascita":"1926-02-07","tipo":"Non Elettore","creato_da":"Benedetto XVI","paese":"Argentina","continente":"America del Sud"}
 {"nome":"WAMALA Card. Emmanuel","url":"https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_wamala_e.html","data_di_nascita":"1926-12-15","tipo":"Non Elettore","creato_da":"S. Giovanni Paolo II","paese":"Uganda","continente":"Africa"}
 ...
+```
+
+or in CSV (`.csv`) format:
+```
+nome,url,data_di_nascita,tipo,creato_da,paese,continente
+ACERBI Card. Angelo,https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_acerbi_a.html,1925-09-23,Non Elettore,Francesco,Italia,Europa
+KARLIC Card. Estanislao Esteban,https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_karlic_ee.html,1926-02-07,Non Elettore,Benedetto XVI,Argentina,America del Sud
+WAMALA Card. Emmanuel,https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_wamala_e.html,1926-12-15,Non Elettore,S. Giovanni Paolo II,Uganda,Africas
 ```
