@@ -148,6 +148,7 @@ nome,url,data_di_nascita,tipo,creato_da,paese,continente
 ACERBI Card. Angelo,https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_acerbi_a.html,1925-09-23,Non Elettore,Francesco,Italia,Europa
 KARLIC Card. Estanislao Esteban,https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_karlic_ee.html,1926-02-07,Non Elettore,Benedetto XVI,Argentina,America del Sud
 WAMALA Card. Emmanuel,https://press.vatican.va/content/salastampa/it/documentation/cardinali_biografie/cardinali_bio_wamala_e.html,1926-12-15,Non Elettore,S. Giovanni Paolo II,Uganda,Africas
+...
 ```
 
 ## License
